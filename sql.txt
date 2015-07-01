@@ -1,0 +1,8 @@
+-- foreign keys
+-- Reference:  TNhanvien_TPhongban (table: TNhanvien)
+ALTER TABLE TNhanvien ADD CONSTRAINT TNhanvien_TPhongban 
+   FOREIGN KEY (TPhongban_Maphong)
+   REFERENCES TPhongban (Maphong)
+   NOT DEFERRABLE 
+   INITIALLY IMMEDIATE 
+;
